@@ -20,7 +20,10 @@ int main()
 	cout<<"enter the number of nodes and the number of M\n";
 	cin>>count>>m;
 	if(m<=0||count<=0)
+	{
+		cout<<"invalid num\n"
 		exit(-1);
+	}
 	for(int i=0;i<count;i++)
 	{
 		Node* p=new Node(i+1);
